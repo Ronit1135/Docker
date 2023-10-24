@@ -1,4 +1,3 @@
-echo"This is my artifact going to s3 "
 version: 0.2
 
 phases:
