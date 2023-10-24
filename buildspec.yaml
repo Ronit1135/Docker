@@ -10,10 +10,10 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - mvn install
+      - mvn install -f /codebuild/output/src1966583151/src/github.com/Ronit1135/Docker/pom.xml
   post_build:
     commands:
       - echo Build completed on `date`
 artifacts:
   files:
-    - target/messageUtil-1.0.jar
+    - /codebuild/output/src1966583151/src/github.com/Ronit1135/Docker/target/messageUtil-1.0.jar
